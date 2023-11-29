@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="tombol">Kllick saye</button>
+    <button type="button-a" id="tombol">Kllick saye</button>
+    
+    <script>
+
+        //event listener (carosel,tema gelap terang ,dll)
+        //bisa memunculkan 2 funtion yang sama , (silahkan di coba mengcopy past
+        //  lalu di ganti yang satunya jadi consol.log pasti 2 2nya muncul
+       const tombol = document.getElementById('tombol')
+       tombol.addEventListener('click',function(){
+        alert("saya berhasil");
+       })
+       tombol.addEventListener('click',function(){
+        console.log("saya berhasil");
+       })
+
+    //    event hendeler
+    // 
+       const tom = document.getElementById('button-a')
+       function button(){
+        alert('tombol a')
+       }
+       function button(){
+        console.log('tombol a2')
+       }
+        
+    </script>
+</body>
+</html>
